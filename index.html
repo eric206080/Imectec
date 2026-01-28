@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMECTEC | Ingeniería Eléctrica y Electromecánica – Perú</title>
+    <meta name="description" content="IMECTEC: Soluciones integrales en ingeniería eléctrica y electromecánica. Tableros BT/MT, variadores, grupos electrógenos, automatización PLC. Cotiza ahora.">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="IMECTEC" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-name">IMECTEC</span>
+                    <span class="logo-tagline">Ingeniería & Proyectos</span>
+                </div>
+            </a>
+            
+            <nav class="nav-desktop">
+                <a href="#servicios">Servicios</a>
+                <a href="#sectores">Sectores</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            
+            <a href="https://wa.me/51980038307?text=Hola%20IMECTEC,%20deseo%20cotizar..." class="btn-cta" target="_blank">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Cotizar
+            </a>
+            
+            <button class="menu-toggle" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <nav>
+            <a href="#servicios">Servicios</a>
+            <a href="#sectores">Sectores</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <a href="https://wa.me/51980038307" class="btn-cta-mobile" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Cotizar por WhatsApp
+        </a>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-bg">
+                <!-- Carrusel de Videos -->
+                <div class="video-carousel">
+                    <div class="video-slide active">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/video1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video-slide">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/video2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video-slide">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/video3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <!-- Imagen de respaldo si los videos no cargan -->
+                <img src="images/hero-bg.jpg" alt="" class="hero-img hero-fallback">
+                <div class="hero-overlay"></div>
+                <!-- Indicadores de video -->
+                <div class="video-indicators">
+                    <div class="video-indicator active" data-index="0"></div>
+                    <div class="video-indicator" data-index="1"></div>
+                    <div class="video-indicator" data-index="2"></div>
+                </div>
+            </div>
+            <div class="container hero-content">
+                <h1>INGENIERÍA ELÉCTRICA Y ELECTROMECÁNICA DE ALTO NIVEL</h1>
+                <p>Soluciones integrales en baja, media y alta tensión para proyectos industriales, mineros e infraestructura.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/51980038307?text=Hola%20IMECTEC,%20deseo%20cotizar..." class="btn-primary" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Solicitar Cotización
+                    </a>
+                    <a href="#contacto" class="btn-outline">Ver Servicios</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Proyectos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Clientes</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Años</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section class="servicios" id="servicios">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Nuestros Servicios</span>
+                    <h2>Soluciones Integrales en Ingeniería Eléctrica</h2>
+                    <p>Ofrecemos servicios especializados para garantizar la continuidad operativa de su empresa</p>
+                </div>
+                
+                <div class="servicios-grid">
+                    <div class="servicio-card">
+                        <div class="servicio-img">
+                            <img src="images/servicio-tableros.jpg" alt="Tableros Eléctricos">
+                        </div>
+                        <div class="servicio-content">
+                            <h3>Tableros Eléctricos BT/MT</h3>
+                            <p>Diseño, fabricación y ensamble de tableros de distribución, control y potencia hasta 36kV.</p>
+                            <a href="https://wa.me/51980038307?text=Hola,%20necesito%20información%20sobre%20tableros%20eléctricos" class="servicio-link" target="_blank">Cotizar →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="servicio-card">
+                        <div class="servicio-img">
+                            <img src="images/servicio-mantenimiento.jpg" alt="Mantenimiento Eléctrico">
+                        </div>
+                        <div class="servicio-content">
+                            <h3>Mantenimiento Eléctrico</h3>
+                            <p>Mantenimiento preventivo y correctivo de sistemas eléctricos industriales y comerciales.</p>
+                            <a href="https://wa.me/51980038307?text=Hola,%20necesito%20información%20sobre%20mantenimiento" class="servicio-link" target="_blank">Cotizar →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="servicio-card">
+                        <div class="servicio-img">
+                            <img src="images/galeria-02.jpg" alt="Variadores de Frecuencia">
+                        </div>
+                        <div class="servicio-content">
+                            <h3>Variadores de Frecuencia</h3>
+                            <p>Instalación, configuración y puesta en marcha de variadores para control de motores.</p>
+                            <a href="https://wa.me/51980038307?text=Hola,%20necesito%20información%20sobre%20variadores" class="servicio-link" target="_blank">Cotizar →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="servicio-card">
+                        <div class="servicio-img">
+                            <img src="images/galeria-03.jpg" alt="Grupos Electrógenos">
+                        </div>
+                        <div class="servicio-content">
+                            <h3>Grupos Electrógenos</h3>
+                            <p>Instalación de generadores, sistemas ATS y UPS para respaldo de energía crítica.</p>
+                            <a href="https://wa.me/51980038307?text=Hola,%20necesito%20información%20sobre%20grupos%20electrógenos" class="servicio-link" target="_blank">Cotizar →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="servicio-card">
+                        <div class="servicio-img">
+                            <img src="images/proyecto-01.jpg" alt="Protecciones y Sincronismo">
+                        </div>
+                        <div class="servicio-content">
+                            <h3>Protecciones y Sincronismo</h3>
+                            <p>Sistemas de protección eléctrica y sincronización de generadores con la red.</p>
+                            <a href="https://wa.me/51980038307?text=Hola,%20necesito%20información%20sobre%20protecciones" class="servicio-link" target="_blank">Cotizar →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="servicio-card">
+                        <div class="servicio-img">
+                            <img src="images/proyecto-02.jpg" alt="Puesta a Tierra">
+                        </div>
+                        <div class="servicio-content">
+                            <h3>Puesta a Tierra</h3>
+                            <p>Diseño e instalación de sistemas de puesta a tierra y pararrayos certificados.</p>
+                            <a href="https://wa.me/51980038307?text=Hola,%20necesito%20información%20sobre%20puesta%20a%20tierra" class="servicio-link" target="_blank">Cotizar →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="servicio-card">
+                        <div class="servicio-img">
+                            <img src="images/galeria-01.jpg" alt="Canalización y Cableado">
+                        </div>
+                        <div class="servicio-content">
+                            <h3>Canalización y Cableado</h3>
+                            <p>Tendido de cables, bandejas portacables y canalizaciones eléctricas industriales.</p>
+                            <a href="https://wa.me/51980038307?text=Hola,%20necesito%20información%20sobre%20cableado" class="servicio-link" target="_blank">Cotizar →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="servicio-card">
+                        <div class="servicio-img">
+                            <img src="images/proyecto-03.jpg" alt="Automatización PLC/HMI">
+                        </div>
+                        <div class="servicio-content">
+                            <h3>Automatización PLC/HMI</h3>
+                            <p>Programación y configuración de PLCs, HMIs y sistemas SCADA industriales.</p>
+                            <a href="https://wa.me/51980038307?text=Hola,%20necesito%20información%20sobre%20automatización" class="servicio-link" target="_blank">Cotizar →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="servicio-card">
+                        <div class="servicio-img">
+                            <img src="images/hero-bg.jpg" alt="Ingeniería de Detalle">
+                        </div>
+                        <div class="servicio-content">
+                            <h3>Ingeniería de Detalle</h3>
+                            <p>Cálculos eléctricos, memorias descriptivas, planos unifilares y documentación técnica para proyectos.</p>
+                            <a href="https://wa.me/51980038307?text=Hola,%20necesito%20información%20sobre%20ingeniería%20de%20detalle" class="servicio-link" target="_blank">Cotizar →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sectores -->
+        <section class="sectores" id="sectores">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Sectores que Atendemos</span>
+                    <h2>Experiencia en Múltiples Industrias</h2>
+                </div>
+                
+                <div class="sectores-grid">
+                    <div class="sector-card">
+                        <div class="sector-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 20h20"/><path d="M5 20V8l7-5 7 5v12"/><path d="M9 20v-6h6v6"/></svg>
+                        </div>
+                        <h3>Industria</h3>
+                    </div>
+                    <div class="sector-card">
+                        <div class="sector-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3>Minería</h3>
+                    </div>
+                    <div class="sector-card">
+                        <div class="sector-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                        <h3>Energía</h3>
+                    </div>
+                    <div class="sector-card">
+                        <div class="sector-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v6"/><path d="M12 22v-6"/><circle cx="12" cy="12" r="4"/><path d="M4.93 4.93l4.24 4.24"/><path d="M14.83 14.83l4.24 4.24"/><path d="M2 12h6"/><path d="M16 12h6"/><path d="M4.93 19.07l4.24-4.24"/><path d="M14.83 9.17l4.24-4.24"/></svg>
+                        </div>
+                        <h3>Saneamiento</h3>
+                    </div>
+                    <div class="sector-card">
+                        <div class="sector-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="6" width="22" height="14" rx="2"/><path d="M1 10h22"/></svg>
+                        </div>
+                        <h3>Construcción</h3>
+                    </div>
+                    <div class="sector-card">
+                        <div class="sector-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12l6-6 4 4 8-8"/><path d="M16 4h4v4"/></svg>
+                        </div>
+                        <h3>Pesca</h3>
+                    </div>
+                    <div class="sector-card">
+                        <div class="sector-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </div>
+                        <h3>Hidrocarburos</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section class="proyectos" id="proyectos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Proyectos Destacados</span>
+                    <h2>Casos de Éxito</h2>
+                    <p>Soluciones implementadas que generan resultados medibles</p>
+                </div>
+                
+                <div class="proyectos-grid">
+                    <div class="proyecto-card">
+                        <div class="proyecto-img">
+                            <img src="images/proyecto-01.jpg" alt="Proyecto Minería">
+                            <span class="proyecto-sector">Minería</span>
+                        </div>
+                        <div class="proyecto-content">
+                            <h3>Tablero de Distribución 1000A</h3>
+                            <div class="proyecto-detail">
+                                <strong>Problema:</strong> Paradas no programadas por fallas en sistema eléctrico antiguo.
+                            </div>
+                            <div class="proyecto-detail">
+                                <strong>Solución:</strong> Diseño e instalación de tablero con protecciones selectivas y monitoreo.
+                            </div>
+                            <div class="proyecto-result">
+                                <strong>Resultado:</strong> 98% de disponibilidad operativa.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="proyecto-card">
+                        <div class="proyecto-img">
+                            <img src="images/proyecto-02.jpg" alt="Proyecto Industria">
+                            <span class="proyecto-sector">Industria</span>
+                        </div>
+                        <div class="proyecto-content">
+                            <h3>Sistema de Variadores para Fajas</h3>
+                            <div class="proyecto-detail">
+                                <strong>Problema:</strong> Alto consumo energético en sistema de fajas transportadoras.
+                            </div>
+                            <div class="proyecto-detail">
+                                <strong>Solución:</strong> Instalación de variadores de frecuencia con control PID.
+                            </div>
+                            <div class="proyecto-result">
+                                <strong>Resultado:</strong> Reducción del 35% en consumo eléctrico.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="proyecto-card">
+                        <div class="proyecto-img">
+                            <img src="images/proyecto-03.jpg" alt="Proyecto Saneamiento">
+                            <span class="proyecto-sector">Saneamiento</span>
+                        </div>
+                        <div class="proyecto-content">
+                            <h3>Automatización PTAR</h3>
+                            <div class="proyecto-detail">
+                                <strong>Problema:</strong> Operación manual con alto costo de personal y errores frecuentes.
+                            </div>
+                            <div class="proyecto-detail">
+                                <strong>Solución:</strong> Sistema SCADA con PLCs para control automático de procesos.
+                            </div>
+                            <div class="proyecto-result">
+                                <strong>Resultado:</strong> Operación 24/7 con supervisión remota.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="proyectos-cta">
+                    <a href="https://wa.me/51980038307?text=Hola,%20deseo%20conocer%20más%20proyectos" class="btn-primary" target="_blank">Ver más proyectos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nosotros / Por qué elegirnos -->
+        <section class="nosotros" id="nosotros">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">¿Por qué IMECTEC?</span>
+                    <h2>Nuestros Diferenciadores</h2>
+                </div>
+                
+                <div class="diferenciadores-grid">
+                    <div class="diferenciador">
+                        <div class="diferenciador-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <h3>Respuesta Rápida</h3>
+                        <p>Atención en menos de 24 horas para emergencias y cotizaciones.</p>
+                    </div>
+                    
+                    <div class="diferenciador">
+                        <div class="diferenciador-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                        </div>
+                        <h3>Seguridad Certificada</h3>
+                        <p>Personal capacitado en normas de seguridad eléctrica y trabajo en altura.</p>
+                    </div>
+                    
+                    <div class="diferenciador">
+                        <div class="diferenciador-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3>Personal Calificado</h3>
+                        <p>Ingenieros y técnicos con amplia experiencia en proyectos industriales.</p>
+                    </div>
+                    
+                    <div class="diferenciador">
+                        <div class="diferenciador-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <h3>Calidad Garantizada</h3>
+                        <p>Uso de materiales certificados y procesos bajo estándares internacionales.</p>
+                    </div>
+                    
+                    <div class="diferenciador">
+                        <div class="diferenciador-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                        </div>
+                        <h3>Documentación Completa</h3>
+                        <p>Entregamos planos, protocolos de pruebas y manuales de operación.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Preguntas Frecuentes</span>
+                    <h2>Resolvemos tus Dudas</h2>
+                </div>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Cuánto tiempo toma fabricar un tablero eléctrico?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>El tiempo depende de la complejidad del tablero. Un tablero estándar de distribución toma entre 2-3 semanas. Tableros de control con automatización pueden tomar 4-6 semanas. Siempre confirmamos el plazo exacto al momento de cotizar.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Trabajan en todo el Perú?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, atendemos proyectos en todo el territorio nacional. Tenemos experiencia en proyectos mineros en zonas alejadas y plantas industriales en diversas regiones del país.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Ofrecen garantía en sus trabajos?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Todos nuestros trabajos incluyen garantía. Los tableros tienen 1 año de garantía en fabricación. Las instalaciones incluyen garantía de 6 meses a 1 año dependiendo del tipo de trabajo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Qué tipo de tableros fabrican?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Fabricamos tableros de distribución, tableros de control, tableros de transferencia automática (ATS), tableros de arranque de motores, CCMs, tableros para variadores y tableros de medición, tanto en baja como en media tensión hasta 36kV.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Realizan contratos de mantenimiento?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, ofrecemos contratos de mantenimiento preventivo con frecuencia mensual, trimestral o semestral según sus necesidades. Incluyen inspecciones, termografía, limpieza y ajustes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="contacto" id="contacto">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Contacto</span>
+                    <h2>¿Listo para tu Proyecto?</h2>
+                    <p>Contáctanos y recibe una cotización en menos de 24 horas</p>
+                </div>
+                
+                <div class="contacto-grid">
+                    <div class="contacto-info">
+                        <div class="contacto-card">
+                            <div class="contacto-icon whatsapp">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            </div>
+                            <div>
+                                <h3>WhatsApp</h3>
+                                <p>Respuesta inmediata</p>
+                                <a href="https://wa.me/51980038307" target="_blank">+51 980 038 307</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contacto-card">
+                            <div class="contacto-icon email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <p>Cotizaciones formales</p>
+                                <a href="mailto:comercial@imectec.com">comercial@imectec.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contacto-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre completo *</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="empresa">Empresa</label>
+                                <input type="text" id="empresa" name="empresa">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono *</label>
+                                <input type="tel" id="telefono" name="telefono" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="servicio">Servicio de interés</label>
+                            <select id="servicio" name="servicio">
+                                <option value="">Seleccione un servicio</option>
+                                <option value="tableros">Tableros Eléctricos</option>
+                                <option value="mantenimiento">Mantenimiento</option>
+                                <option value="variadores">Variadores de Frecuencia</option>
+                                <option value="generadores">Grupos Electrógenos</option>
+                                <option value="automatizacion">Automatización</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Descripción del proyecto *</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Cuéntenos sobre su proyecto o requerimiento..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar Solicitud</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="images/logo.png" alt="IMECTEC">
+                        <span>IMECTEC</span>
+                    </a>
+                    <p>Ingeniería Eléctrica y Electromecánica para proyectos exigentes. Más de 10 años impulsando la industria peruana.</p>
+                    <div class="footer-contact">
+                        <a href="https://wa.me/51980038307" target="_blank">+51 980 038 307</a>
+                        <a href=""mailto:comercial@imectec.com">comercial@imectec.com</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#sectores">Sectores</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <a href="#servicios">Tableros Eléctricos</a>
+                    <a href="#servicios">Mantenimiento</a>
+                    <a href="#servicios">Variadores</a>
+                    <a href="#servicios">Automatización</a>
+                    <a href="#servicios">Ingeniería de Detalle</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 IMECTEC Ingeniería & Proyectos S.A.C. – Perú</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/51980038307?text=Hola%20IMECTEC,%20tengo%20una%20consulta..." class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const header = document.querySelector('.header');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+        });
+        
+        // Close mobile menu on link click
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                mobileNav.classList.remove('active');
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+        
+        // =============================================
+        // VIDEO CAROUSEL - Carrusel de Videos de Fondo
+        // =============================================
+        const videoSlides = document.querySelectorAll('.video-slide');
+        const videoIndicators = document.querySelectorAll('.video-indicator');
+        const heroFallback = document.querySelector('.hero-fallback');
+        let currentVideo = 0;
+        let videoInterval;
+        const VIDEO_DURATION = 8000; // 8 segundos por video
+        
+        // Verificar si los videos cargan
+        let videosLoaded = 0;
+        
+        videoSlides.forEach((slide, index) => {
+            const video = slide.querySelector('video');
+            
+            video.addEventListener('loadeddata', () => {
+                videosLoaded++;
+                if (heroFallback) heroFallback.style.opacity = '0';
+            });
+            
+            video.addEventListener('error', () => {
+                if (videosLoaded === 0 && heroFallback) {
+                    heroFallback.style.opacity = '1';
+                }
+            });
+        });
+        
+        function nextVideo() {
+            videoSlides[currentVideo].classList.remove('active');
+            videoIndicators[currentVideo].classList.remove('active');
+            
+            const currentVid = videoSlides[currentVideo].querySelector('video');
+            currentVid.pause();
+            currentVid.currentTime = 0;
+            
+            currentVideo = (currentVideo + 1) % videoSlides.length;
+            
+            videoSlides[currentVideo].classList.add('active');
+            videoIndicators[currentVideo].classList.add('active');
+            
+            const newVid = videoSlides[currentVideo].querySelector('video');
+            newVid.play();
+        }
+        
+        function goToVideo(index) {
+            if (index === currentVideo) return;
+            clearInterval(videoInterval);
+            
+            videoSlides[currentVideo].classList.remove('active');
+            videoIndicators[currentVideo].classList.remove('active');
+            
+            const currentVid = videoSlides[currentVideo].querySelector('video');
+            currentVid.pause();
+            currentVid.currentTime = 0;
+            
+            currentVideo = index;
+            
+            videoSlides[currentVideo].classList.add('active');
+            videoIndicators[currentVideo].classList.add('active');
+            
+            const newVid = videoSlides[currentVideo].querySelector('video');
+            newVid.play();
+            
+            videoInterval = setInterval(nextVideo, VIDEO_DURATION);
+        }
+        
+        videoIndicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => goToVideo(index));
+        });
+        
+        function startVideoCarousel() {
+            const firstVideo = videoSlides[0].querySelector('video');
+            firstVideo.play().catch(e => console.log('Autoplay blocked'));
+            videoInterval = setInterval(nextVideo, VIDEO_DURATION);
+        }
+        
+        document.addEventListener('DOMContentLoaded', startVideoCarousel);
+        
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                clearInterval(videoInterval);
+                videoSlides.forEach(slide => slide.querySelector('video').pause());
+            } else {
+                videoSlides[currentVideo].querySelector('video').play();
+                videoInterval = setInterval(nextVideo, VIDEO_DURATION);
+            }
+        });
+    </script>
+</body>
+</html>
