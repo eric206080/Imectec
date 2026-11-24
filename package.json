@@ -1,0 +1,22 @@
+{
+  "name": "imectec-web",
+  "version": "1.0.0",
+  "description": "Sitio web IMECTEC Ingeniería & Proyectos",
+  "scripts": {
+    "build:html": "python3 tools/build.py",
+    "build:css": "tailwindcss -i ./src/tailwind.css -o ./css/main.css --minify",
+    "build": "npm run build:html && npm run build:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eric206080/Ingdelca.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eric206080/Ingdelca/issues"
+  },
+  "homepage": "https://github.com/eric206080/Ingdelca#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  },
+  "private": true
+}
