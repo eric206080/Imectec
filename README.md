@@ -37,6 +37,6 @@ En `js/main.js` puedes completar `GA4_ID` (si creas Google Analytics) y `ADS_LEA
 
 ## Pendientes recomendados
 
-1. **Google Search Console**: verificar `ingdelca.com` y enviar `https://imectec.com/sitemap.xml`.
+1. **Google Search Console**: verificar `imectec.com` y enviar `https://imectec.com/sitemap.xml`.
 2. **Google Business Profile**: crear/actualizar la ficha con el mismo teléfono, horario y web.
 3. **Videos del inicio**: muestran marcas de agua (iStock / clideo.com). Reemplazarlos por videos con licencia o propios (mismos nombres).
