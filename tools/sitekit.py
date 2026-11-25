@@ -9,7 +9,22 @@ WA_NUMBER = "51980038307"
 WA_DISPLAY = "+51 980 038 307"
 EMAIL = "comercial@imectec.com"
 ADS_TAG = "AW-17952331494"  # Etiqueta de Google Ads ya existente: NO quitar
-ASSET_VERSION = "20261124"
+import hashlib as _h, os as _os
+_ROOT = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
+
+
+def _asset_hash():
+    """Versión = huella de css/main.css + js/main.js: cambia sola para que nadie vea estilos viejos en caché."""
+    m = _h.sha1()
+    for f in ("css/main.css", "js/main.js"):
+        try:
+            m.update(open(_os.path.join(_ROOT, f), "rb").read())
+        except FileNotFoundError:
+            pass
+    return m.hexdigest()[:10]
+
+
+ASSET_VERSION = _asset_hash()
 
 
 def wa(text="Hola IMECTEC, deseo cotizar un servicio"):
@@ -134,7 +149,8 @@ def head(*, title, description, path, root, jsonld_html="", og_title=None, prelo
     <meta name="geo.region" content="PE-LIM">
     <meta name="geo.placename" content="Lima">
     <link rel="canonical" href="{url}">
-    <!-- Google Search Console: pega aquí la meta de verificación si usas ese método -->
+    <!-- Google Search Console / Bing Webmaster Tools: pega aquí sus metas de verificación si usas ese método -->
+    <link rel="alternate" type="text/plain" title="Resumen para asistentes de IA" href="{SITE}/llms.txt">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="IMECTEC">
