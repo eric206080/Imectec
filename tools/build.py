@@ -615,7 +615,39 @@ def build_seo_files():
     sm += "".join(f"  <url><loc>{SITE}{u}</loc><lastmod>{today}</lastmod><priority>{p}</priority></url>\n" for u, p in urls)
     sm += "</urlset>\n"
     write("sitemap.xml", sm)
-    write("robots.txt", f"User-agent: *\nAllow: /\nDisallow: /tools/\nDisallow: /src/\n\nSitemap: {SITE}/sitemap.xml\n")
+    bots = ["Googlebot", "Bingbot", "Google-Extended", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User",
+            "PerplexityBot", "Perplexity-User", "Applebot", "Applebot-Extended", "Amazonbot", "meta-externalagent", "DuckAssistBot", "CCBot"]
+    robots = "# Buscadores y asistentes de IA: bienvenidos. Queremos que encuentren y citen a IMECTEC.\n"
+    robots += "".join(f"User-agent: {b}\n" for b in bots) + "Allow: /\n\n"
+    robots += "User-agent: *\nAllow: /\nDisallow: /tools/\nDisallow: /src/\n\n"
+    robots += f"Sitemap: {SITE}/sitemap.xml\n"
+    write("robots.txt", robots)
+    write("llms.txt", build_llms_txt())
+
+
+def build_llms_txt():
+    """Resumen en texto plano para asistentes de IA (estándar llms.txt)."""
+    L = ["# IMECTEC Ingeniería & Proyectos S.A.C.", "",
+         "> Empresa peruana de ingeniería eléctrica y electromecánica: diseño, fabricación y ensamble de tableros eléctricos BT/MT hasta 36 kV, "
+         "mantenimiento eléctrico industrial, mantenimiento de subestaciones, variadores de frecuencia, automatización PLC/HMI/SCADA, protecciones y sincronismo, "
+         "puesta a tierra, canalización y cableado, e ingeniería de detalle, para industria, minería, energía, saneamiento, construcción, pesca e hidrocarburos en todo el Perú.", "",
+         "- Ubicación: Lima, Perú. Atiende proyectos en todo el Perú.",
+         f"- WhatsApp: {WA_DISPLAY} · Email: {EMAIL} · Web: {SITE}/",
+         "- Garantía: 1 año en fabricación de tableros; de 6 meses a 1 año en instalaciones según el trabajo.",
+         "- Atención de emergencias y cotizaciones en menos de 24 horas.", "",
+         "## Servicios"]
+    for slug, name, _ in SERVICE_PAGES:
+        L.append(f"- [{name}]({SITE}/{slug}/): {SERVICE_CONTENT[slug]['desc']}")
+    L += ["- Protecciones y sincronismo; puesta a tierra y pararrayos; canalización y cableado; ingeniería de detalle (cálculos, memorias, planos unifilares).", "",
+          "## Casos de éxito"]
+    for _, sec, t, pb, so, rs, _a in PROJECTS:
+        L.append(f"- {t} (sector {sec}): {pb} Solución: {so} Resultado: {rs}")
+    L += ["", "## Preguntas frecuentes"]
+    for q, a in HOME_FAQS:
+        L.append(f"- {q} {a}")
+    L += ["", "## Empresa relacionada",
+          "- INGDELCA Ingeniería & Consultoría S.A.C. (https://ingdelca.com): ingeniería y obras hidráulicas, topografía con dron, modelamiento, defensas ribereñas y sistemas de bombeo. Certificada ISO 9001, 14001, 45001 y 37001."]
+    return "\n".join(L) + "\n"
 
 
 if __name__ == "__main__":

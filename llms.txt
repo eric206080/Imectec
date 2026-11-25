@@ -1,0 +1,32 @@
+# IMECTEC Ingeniería & Proyectos S.A.C.
+
+> Empresa peruana de ingeniería eléctrica y electromecánica: diseño, fabricación y ensamble de tableros eléctricos BT/MT hasta 36 kV, mantenimiento eléctrico industrial, mantenimiento de subestaciones, variadores de frecuencia, automatización PLC/HMI/SCADA, protecciones y sincronismo, puesta a tierra, canalización y cableado, e ingeniería de detalle, para industria, minería, energía, saneamiento, construcción, pesca e hidrocarburos en todo el Perú.
+
+- Ubicación: Lima, Perú. Atiende proyectos en todo el Perú.
+- WhatsApp: +51 980 038 307 · Email: comercial@imectec.com · Web: https://imectec.com/
+- Garantía: 1 año en fabricación de tableros; de 6 meses a 1 año en instalaciones según el trabajo.
+- Atención de emergencias y cotizaciones en menos de 24 horas.
+
+## Servicios
+- [Tableros Eléctricos BT/MT](https://imectec.com/tableros-electricos/): Diseño, fabricación y ensamble de tableros eléctricos de baja y media tensión hasta 36 kV en Perú: distribución, control, ATS, CCM, arranque de motores y variadores. Garantía de 1 año.
+- [Mantenimiento Eléctrico Industrial](https://imectec.com/mantenimiento-electrico/): Mantenimiento eléctrico preventivo, predictivo y correctivo para industria, minería y comercio en Perú: termografía, inspecciones, limpieza y ajustes. Contratos mensuales, trimestrales o semestrales.
+- [Mantenimiento de Subestaciones](https://imectec.com/subestaciones/): Mantenimiento preventivo y predictivo de subestaciones eléctricas en Perú: transformadores, celdas de media tensión, seccionadores, protecciones y puesta a tierra. Para minería, energía e industria.
+- [Automatización PLC, HMI y SCADA](https://imectec.com/automatizacion-plc-scada/): Automatización industrial en Perú: programación de PLC, pantallas HMI y sistemas SCADA para control y supervisión remota de procesos en minería, saneamiento e industria.
+- [Variadores de Frecuencia](https://imectec.com/variadores-de-frecuencia/): Instalación, configuración y puesta en marcha de variadores de frecuencia para control de motores en bombas, fajas y ventiladores. Ahorro de energía y arranques suaves. Perú.
+- Protecciones y sincronismo; puesta a tierra y pararrayos; canalización y cableado; ingeniería de detalle (cálculos, memorias, planos unifilares).
+
+## Casos de éxito
+- Tablero de Distribución 1000A (sector Minería): Paradas no programadas por fallas en sistema eléctrico antiguo. Solución: Diseño e instalación de tablero con protecciones selectivas y monitoreo. Resultado: 98% de disponibilidad operativa.
+- Sistema de Variadores para Fajas (sector Industria): Alto consumo energético en sistema de fajas transportadoras. Solución: Instalación de variadores de frecuencia con control PID. Resultado: Reducción del 35% en consumo eléctrico.
+- Automatización PTAR (sector Saneamiento): Operación manual con alto costo de personal y errores frecuentes. Solución: Sistema SCADA con PLCs para control automático de procesos. Resultado: Operación 24/7 con supervisión remota.
+
+## Preguntas frecuentes
+- ¿Cuánto tiempo toma fabricar un tablero eléctrico? El tiempo depende de la complejidad del tablero. Un tablero estándar de distribución toma entre 2 y 3 semanas. Tableros de control con automatización pueden tomar de 4 a 6 semanas. Siempre confirmamos el plazo exacto al momento de cotizar.
+- ¿Trabajan en todo el Perú? Sí, atendemos proyectos en todo el territorio nacional. Tenemos experiencia en proyectos mineros en zonas alejadas y plantas industriales en diversas regiones del país.
+- ¿Ofrecen garantía en sus trabajos? Todos nuestros trabajos incluyen garantía. Los tableros tienen 1 año de garantía en fabricación. Las instalaciones incluyen garantía de 6 meses a 1 año dependiendo del tipo de trabajo.
+- ¿Qué tipo de tableros fabrican? Fabricamos tableros de distribución, tableros de control, tableros de transferencia automática (ATS), tableros de arranque de motores, CCMs, tableros para variadores y tableros de medición, tanto en baja como en media tensión hasta 36 kV.
+- ¿Realizan contratos de mantenimiento? Sí, ofrecemos contratos de mantenimiento preventivo con frecuencia mensual, trimestral o semestral según sus necesidades. Incluyen inspecciones, termografía, limpieza y ajustes.
+- ¿Cómo solicito una cotización? Escríbanos por WhatsApp al +51 980 038 307, envíe un correo a comercial@imectec.com o complete el formulario de esta página. Para cotizaciones formales, el correo es el canal recomendado.
+
+## Empresa relacionada
+- INGDELCA Ingeniería & Consultoría S.A.C. (https://ingdelca.com): ingeniería y obras hidráulicas, topografía con dron, modelamiento, defensas ribereñas y sistemas de bombeo. Certificada ISO 9001, 14001, 45001 y 37001.
